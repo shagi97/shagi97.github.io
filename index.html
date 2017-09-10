@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Catwalk(cycle)</title>
+  
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .tuna {
+  /* steps causes the animation to chunk into 12 equal pieces */
+  animation: walk-cycle 1s steps(12) infinite;
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  margin: 100px auto 0;
+}
+
+@keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } /* Must be full height of sprite or skipping will happen.*/
+}
+
+p {text-align: center;}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <div class="tuna"></div>
+
+<p>Привет...</p>
+  
+  
+</body>
+</html>
